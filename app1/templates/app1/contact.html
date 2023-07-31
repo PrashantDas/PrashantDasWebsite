@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}
+    {% endblock %}</title>
+
+</head>
+
+<body>
+
+  {% block content %}
+  <h1><b>Contact</b></h1>
+  <br><br>
+  <h1 class="display-6">Github</h1>
+  <ul>
+    <li>
+      <p><a href="https://github.com/PrashantDas" target="_blank">https://github.com/PrashantDas</a></p>
+    </li>
+  </ul>
+  <br><br>
+  <h1 class="display-6">Email</h1>
+  <ul>
+    <li>
+      <p> prashantprashant @ hotmail . com</p>
+    </li>
+  </ul>
+  <br><br>
+  <h1 class="display-6">Mobile</h1>
+  <ul>
+    <li>
+      <p>9 9 5 3 9 4 5 4 1 1</p>
+    </li>
+  </ul>
+  {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Home
+        {% endblock %}</title>
+        {% block headcontent %}
+        <style>
+          *{
+          margin: 0;
+          padding: 0;
+      }
+      body{
+          background-image: url('https://everything-django.s3.ap-south-1.amazonaws.com/static/personal/purana_quila_4624x2084.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+      }
+      </style>
+    {% endblock %}
+  </head>
+  <body>
+
+        {% block content %}
+        <br><br><br><br><br><br>
+        <h1>Prashant Das</h1>
+        {% endblock %}
+  </body>
+</html>

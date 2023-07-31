@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}
+        {% endblock %}</title>
+
+  </head>
+  <body>
+        {% block content %}
+        <h1><b>Projects</b></h1>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col">      
+                <a href="https://art-gallery-prashant.vercel.app/" target="_blank">
+                  <img  src="{% static 'personal/ArtGallery.png' %}" class="rounded img-thumbnail" title="Visit the website" alt="ArtGallery">      
+                </a>
+                <br><br>
+                <p class="row justify-content-center">Art Gallery</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col">      
+                <a href="https://hospitalmanagement-production.up.railway.app/" target="_blank">
+                  <img  src="{% static 'personal/HospitalManagement.png' %}" class="rounded img-thumbnail" title="Visit the website" alt="Hospital">      
+                </a>
+                <br><br>
+                <p class="row justify-content-center">Hospital Management</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col">      
+                <a href="https://prashantrestdjango.onrender.com" target="_blank">
+                  <img  src="{% static 'personal/drfw.png' %}" class="rounded img-thumbnail" title="Visit the website" alt="REST Framework">      
+                </a>
+                <br><br>
+                <p class="row justify-content-center">Django REST framework applcation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endblock %}
+
+  </body>
+</html>

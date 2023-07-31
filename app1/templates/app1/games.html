@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}
+    {% endblock %}</title>
+
+</head>
+
+<body>
+
+  {% block content %}
+  <h1><b>Games</b></h1>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col col-5">      
+      <a href="https://prashant-hangman-game.vercel.app/" target="_blank">
+        <img  src="{% static 'personal/HangmanWebsite.png' %}" class="rounded img-thumbnail" title="Visit the website" alt="hangman">      
+      </a>
+      <br><br>
+      <p class="row justify-content-center">Popular word-game</p>
+    </div>
+  </div>
+  {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Django==3.2.17
+Pillow
+django-storages
+boto3
