@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from app1.views import home, contact, projects, games
+from app1.views import home, contact, projects, games, ds
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('contact/', contact, name='contact'),
     path('projects/', projects, name='projects'),
     path('games/', games, name='games'),
+    path('ds/', ds, name='ds'),
 ]
 
 if settings.DEBUG:
