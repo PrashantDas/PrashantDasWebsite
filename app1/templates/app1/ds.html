@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}
+        {% endblock %}</title>
+
+  </head>
+  <body>
+        {% block content %}
+        <h1><b>Data Science Projects</b></h1>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-center">
+              <div class="col">
+
+                <div class="card bg-success">
+                  <h5 class="card-header text-light">Do These Tweets anounce a disaster</h5>
+                  <div class="card-body">
+                    <p class="card-text text-light">Natural Language Processing algorithm assesses if tweets announce a disaster</p>                    
+                    <div><a href="https://disastertweets.onrender.com/" target="_blank">https://disastertweets.onrender.com/</a></div>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="card bg-success">
+                  <h5 class="card-header text-light">Bangalore House Prices Estimation</h5>
+                  <div class="card-body">
+                    <p class="card-text text-light">Data Science project, uses a regression model to predict house-prices in Bangalore</p>                    
+                    <div><a href="https://bangalorehouseprices.onrender.com/" target="_blank">https://bangalorehouseprices.onrender.com/</a></div>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="card bg-success">
+                  <h5 class="card-header text-light">Smoker Status Classification using Bio-Signals</h5>
+                  <div class="card-body">
+                    <p class="card-text text-light">A project that uses bio-markers to identify you as a smoker or non-smoker</p>                    
+                    <div><a href="https://smokerstatusclassify.onrender.com/" target="_blank">https://smokerstatusclassify.onrender.com/</a></div>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="card bg-success">
+                  <h5 class="card-header text-light">Digits Recognition</h5>
+                  <div class="card-body">
+                    <p class="card-text text-light">Classification model to recognize digits from an uploaded image.</p>                    
+                    <div><a href="https://digitsrecognition.onrender.com/" target="_blank">https://digitsrecognition.onrender.com/</a></div>
+                  </div>
+                </div>
+
+                <br>
+
+
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+        {% endblock %}
+
+  </body>
+</html>
