@@ -11,3 +11,6 @@ def projects(request):
 
 def games(request):
     return render(request, 'app1/games.html', {})
+
+def ds(request):
+    return render(request, 'app1/ds.html', {})
